@@ -9,6 +9,7 @@ public class SecondPage {
 
 	public static void myfunc() {
 		
+		System.out.println("only a test");
 	}
 	
 	
