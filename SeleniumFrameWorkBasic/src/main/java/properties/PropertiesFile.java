@@ -42,7 +42,7 @@ public class PropertiesFile {
 			Properties prop = new Properties();
 			String projectPath = System.getProperty("user.dir");
 			OutputStream output = new FileOutputStream(projectPath +"\\src\\test\\resources\\config.properties");
-			prop.setProperty("browser", "chrome");
+			prop.setProperty("browser", "firefox");
 			prop.store(output, null);
 		}
 
