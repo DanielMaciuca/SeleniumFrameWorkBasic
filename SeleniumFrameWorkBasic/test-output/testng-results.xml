@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-21T13:00:27 EET" name="Default suite" finished-at="2022-01-21T13:00:31 EET" duration-ms="3665">
+  <suite started-at="2022-01-21T13:15:57 EET" name="Suite" finished-at="2022-01-21T13:16:00 EET" duration-ms="3089">
     <groups>
     </groups>
-    <test started-at="2022-01-21T13:00:27 EET" name="Default test" finished-at="2022-01-21T13:00:31 EET" duration-ms="3665">
+    <test started-at="2022-01-21T13:15:57 EET" name="Test" finished-at="2022-01-21T13:16:00 EET" duration-ms="3089">
       <class name="uiTests.MainPage">
-        <test-method signature="myMethod()[pri:0, instance:uiTests.MainPage@3fb1549b]" started-at="2022-01-21T13:00:28 EET" name="myMethod" finished-at="2022-01-21T13:00:31 EET" duration-ms="3643" status="PASS">
+        <test-method signature="myMethod()[pri:0, instance:uiTests.MainPage@3fb1549b]" started-at="2022-01-21T13:15:57 EET" name="myMethod" finished-at="2022-01-21T13:16:00 EET" duration-ms="3067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myMethod -->
       </class> <!-- uiTests.MainPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
