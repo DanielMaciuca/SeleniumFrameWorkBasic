@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-21T13:15:57 EET" name="Suite" finished-at="2022-01-21T13:16:00 EET" duration-ms="3089">
+  <suite started-at="2022-01-21T14:30:39 EET" name="Default suite" finished-at="2022-01-21T14:30:45 EET" duration-ms="5315">
     <groups>
     </groups>
-    <test started-at="2022-01-21T13:15:57 EET" name="Test" finished-at="2022-01-21T13:16:00 EET" duration-ms="3089">
-      <class name="uiTests.MainPage">
-        <test-method signature="myMethod()[pri:0, instance:uiTests.MainPage@3fb1549b]" started-at="2022-01-21T13:15:57 EET" name="myMethod" finished-at="2022-01-21T13:16:00 EET" duration-ms="3067" status="PASS">
+    <test started-at="2022-01-21T14:30:39 EET" name="Default test" finished-at="2022-01-21T14:30:45 EET" duration-ms="5315">
+      <class name="uiTests.AmazonMainPage">
+        <test-method is-config="true" signature="SetUpTest()[pri:0, instance:uiTests.AmazonMainPage@18d87d80]" started-at="2022-01-21T14:30:39 EET" name="SetUpTest" finished-at="2022-01-21T14:30:45 EET" duration-ms="5228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpTest -->
+        <test-method signature="myMethod()[pri:0, instance:uiTests.AmazonMainPage@18d87d80]" started-at="2022-01-21T14:30:45 EET" name="myMethod" finished-at="2022-01-21T14:30:45 EET" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myMethod -->
-      </class> <!-- uiTests.MainPage -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- uiTests.AmazonMainPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
