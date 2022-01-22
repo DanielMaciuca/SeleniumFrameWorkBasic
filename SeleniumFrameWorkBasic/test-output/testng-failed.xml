@@ -6,7 +6,6 @@
       <class name="uiTests.AmazonMainPage">
         <methods>
           <include name="myMethod"/>
-          <include name="SetUpTest"/>
         </methods>
       </class> <!-- uiTests.AmazonMainPage -->
     </classes>
