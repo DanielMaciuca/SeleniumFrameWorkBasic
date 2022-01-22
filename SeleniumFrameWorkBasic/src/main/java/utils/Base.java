@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Driver {
+public class Base {
 
 	public static WebDriver driver;
 

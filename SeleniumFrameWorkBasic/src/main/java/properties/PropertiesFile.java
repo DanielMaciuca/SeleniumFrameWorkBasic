@@ -6,6 +6,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 
+
+
+
 public class PropertiesFile {
 
 	public static void main(String[] args) {
@@ -21,8 +24,10 @@ public class PropertiesFile {
 			InputStream input = new FileInputStream(projectPath + "\\src\\test\\resources\\config.properties");
 			prop.load(input);
 			String browser = prop.getProperty("browser");
-			System.out.println("Running on " + " " + browser);
-
+			System.out.println("Running on " + " " + browser);	
+			
+		
+			
 		}
 
 		catch(Exception exp) {

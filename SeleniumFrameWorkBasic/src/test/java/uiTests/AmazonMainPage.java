@@ -12,13 +12,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AmazonMainPage {
 	
-	public static String browserName = "chrome";
+	public static String browserName = "firefox";
 	
 	WebDriver driver;
 	
 	@BeforeTest
 	
 	public void SetUpTest() {
+		
 		
 		if (browserName.equalsIgnoreCase("chrome")) {
 			
@@ -47,9 +48,7 @@ public class AmazonMainPage {
 		WebElement textsearch = driver.findElement(By.id("twotabsearchtextbox"));
 		
 		textsearch.sendKeys("portocala");
-		
-		
-
+			
 	}
 
 	@AfterTest
