@@ -1,7 +1,18 @@
 package pageObjects;
 
-public class MainPage {
+import org.openqa.selenium.By;
+import utils.Base;
+
+public class MainPage extends Base{
 	
-	static int a;
+	//Extends the Base class because the driver object is instantiated there
+		
+	By searchBox = By.id("twotabsearchtextbox");
+
+	public void sendKeys(String text) {
+		
+		driver.findElement(searchBox).sendKeys(text);
+
+	}
 
 }

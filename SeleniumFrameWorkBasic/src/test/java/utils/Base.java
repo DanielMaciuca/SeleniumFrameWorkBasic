@@ -31,7 +31,7 @@ public class Base {
 
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 
-			//WebDriver driver = new ChromeDriver(); --won't work
+			//WebDriver driver = new ChromeDriver(); --won't work it will be a new object
 			WebDriverManager.chromedriver().setup();			
 			driver = new ChromeDriver();
 			driver.get("https://www.amazon.com/");
