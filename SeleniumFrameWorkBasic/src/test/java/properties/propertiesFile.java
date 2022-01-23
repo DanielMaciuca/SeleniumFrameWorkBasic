@@ -9,7 +9,7 @@ import java.util.Properties;
 
 
 
-public class PropertiesFile {
+public class propertiesFile {
 
 	public static void main(String[] args) {
 		getProperties();
@@ -23,8 +23,8 @@ public class PropertiesFile {
 			String projectPath = System.getProperty("user.dir");
 			InputStream input = new FileInputStream(projectPath + "\\src\\test\\resources\\config.properties");
 			prop.load(input);
-			String browser = prop.getProperty("browser");
-			System.out.println("Running on " + " " + browser);	
+			//String browser = prop.getProperty("browser");
+			System.out.println(prop.getProperty("browser"));	
 			
 		
 			
@@ -47,7 +47,7 @@ public class PropertiesFile {
 			Properties prop = new Properties();
 			String projectPath = System.getProperty("user.dir");
 			OutputStream output = new FileOutputStream(projectPath +"\\src\\test\\resources\\config.properties");
-			prop.setProperty("browser", "firefox");
+			prop.setProperty("browser", "chrome");
 			prop.store(output, null);
 		}
 
