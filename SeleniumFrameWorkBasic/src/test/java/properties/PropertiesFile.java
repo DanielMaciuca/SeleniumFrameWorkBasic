@@ -6,15 +6,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 
-
-
-
-public class propertiesFile {
-
-	public static void main(String[] args) {
-		getProperties();
-		setProperties();
-	}
+public class PropertiesFile {
 
 	public static void getProperties() {
 
@@ -25,8 +17,6 @@ public class propertiesFile {
 			prop.load(input);
 			//String browser = prop.getProperty("browser");
 			System.out.println(prop.getProperty("browser"));	
-			
-		
 			
 		}
 

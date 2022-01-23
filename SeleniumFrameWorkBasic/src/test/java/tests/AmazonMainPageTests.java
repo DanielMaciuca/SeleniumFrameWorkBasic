@@ -1,7 +1,7 @@
-package Tests;
+package tests;
 import org.testng.annotations.Test;
 
-import pageObjects.MainPage;
+import pageobjects.MainPage;
 import utils.Base;
 
 public class AmazonMainPageTests extends Base {
