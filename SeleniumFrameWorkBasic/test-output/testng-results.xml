@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-23T22:31:19 EET" name="Default suite" finished-at="2022-01-23T22:31:27 EET" duration-ms="7747">
+  <suite started-at="2022-01-23T23:22:46 EET" name="Default suite" finished-at="2022-01-23T23:22:55 EET" duration-ms="8840">
     <groups>
     </groups>
-    <test started-at="2022-01-23T22:31:19 EET" name="Default test" finished-at="2022-01-23T22:31:27 EET" duration-ms="7747">
-      <class name="Tests.AmazonMainPageTests">
-        <test-method is-config="true" signature="SetUpTest()[pri:0, instance:Tests.AmazonMainPageTests@543588e6]" started-at="2022-01-23T22:31:19 EET" name="SetUpTest" finished-at="2022-01-23T22:31:26 EET" duration-ms="6835" status="PASS">
+    <test started-at="2022-01-23T23:22:46 EET" name="Default test" finished-at="2022-01-23T23:22:55 EET" duration-ms="8840">
+      <class name="tests.AmazonMainPageTests">
+        <test-method is-config="true" signature="SetUpTest()[pri:0, instance:tests.AmazonMainPageTests@543588e6]" started-at="2022-01-23T23:22:46 EET" name="SetUpTest" finished-at="2022-01-23T23:22:50 EET" duration-ms="4567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpTest -->
-        <test-method signature="myMethod()[pri:0, instance:Tests.AmazonMainPageTests@543588e6]" started-at="2022-01-23T22:31:26 EET" name="myMethod" finished-at="2022-01-23T22:31:26 EET" duration-ms="92" status="PASS">
+        <test-method signature="myMethod()[pri:0, instance:tests.AmazonMainPageTests@543588e6]" started-at="2022-01-23T23:22:50 EET" name="myMethod" finished-at="2022-01-23T23:22:51 EET" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AmazonMainPageTests@543588e6]" started-at="2022-01-23T22:31:26 EET" name="tearDown" finished-at="2022-01-23T22:31:27 EET" duration-ms="779" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AmazonMainPageTests@543588e6]" started-at="2022-01-23T23:22:51 EET" name="tearDown" finished-at="2022-01-23T23:22:55 EET" duration-ms="4160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.AmazonMainPageTests -->
+      </class> <!-- tests.AmazonMainPageTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
