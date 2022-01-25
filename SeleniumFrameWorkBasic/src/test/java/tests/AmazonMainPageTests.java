@@ -1,7 +1,7 @@
 package tests;
 import org.testng.annotations.Test;
 
-import pageobjects.MainPage;
+import pageobjects.MainPageAmazon;
 import utils.Base;
 
 public class AmazonMainPageTests extends Base {
@@ -12,9 +12,11 @@ public class AmazonMainPageTests extends Base {
 	public void myMethod() {
 
 		//create a Main page object in order to access the sendKeys function
-		MainPage searchProduct = new MainPage();
+		MainPageAmazon searchProduct = new MainPageAmazon();
 
 		searchProduct.sendKeys("cars");
+		
+		searchProduct.clickSearchButton();
 
 	}
 
