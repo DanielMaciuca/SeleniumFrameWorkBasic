@@ -9,7 +9,7 @@ public class MainPageAmazon extends Base{
 
 	By searchBox = By.id("twotabsearchtextbox");
 
-	By searchButton = By.xpath("//input[@id=\"nav-search-submit-button\"]");
+	By searchButton = By.xpath("//input[@id='nav-search-submit-button\']");
 
 	public void sendKeys(String text) {
 
