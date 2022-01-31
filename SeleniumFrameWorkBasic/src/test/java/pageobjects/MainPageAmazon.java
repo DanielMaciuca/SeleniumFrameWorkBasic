@@ -10,7 +10,10 @@ public class MainPageAmazon extends Base{
 	By searchBox = By.id("twotabsearchtextbox");
 
 	By searchButton = By.xpath("//input[@id='nav-search-submit-button\']");
-
+	
+	By cart = By.xpath("//a[@id='nav-cart']");
+	
+	
 	public void sendKeys(String text) {
 
 		driver.findElement(searchBox).sendKeys(text);
@@ -23,4 +26,8 @@ public class MainPageAmazon extends Base{
 
 	}
 
+	public void addToCart() {
+		
+		driver.findElement(cart).click();
+	}
 }
