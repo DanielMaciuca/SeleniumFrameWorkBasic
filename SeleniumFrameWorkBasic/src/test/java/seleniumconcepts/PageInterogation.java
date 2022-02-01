@@ -24,9 +24,9 @@ public class PageInterogation {
 
 		Thread.sleep(5000);
 
-		//driver.close(); //only current tab
+		//driver.close(); //closes only the focused current tab, controlled by the driver
 
-		driver.quit(); //all tabs
+		driver.quit(); //closes all tabs
 
 	}
 
