@@ -39,17 +39,6 @@ public class Locators_1 {
 
 		//driver.findElement(By.tagName("img")).click();
 
-		/*
-		 * List<WebElement> links= driver.findElements(By.tagName("a"));
-		 * 
-		 * int i= links.size();
-		 * 
-		 * System.out.println(i);
-		 * 
-		 * for(int j=0; j<i; j++) { //Printing the links
-		 * System.out.println(links.get(j).getText()); }
-		 */
-
 		// By.LINKTEXT
 
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
