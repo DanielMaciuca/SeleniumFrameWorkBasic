@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-04T10:56:02 EET" name="SuiteUpd" finished-at="2022-02-04T10:56:15 EET" duration-ms="12606">
+  <suite started-at="2022-02-04T13:48:43 EET" name="Default suite" finished-at="2022-02-04T13:48:43 EET" duration-ms="31">
     <groups>
+      <group name="sanity1">
+        <method signature="TestngDependOnGroups.firstMethod_class1()[pri:0, instance:testngconcepts.TestngDependOnGroups@3059cbc]" name="firstMethod_class1" class="testngconcepts.TestngDependOnGroups"/>
+        <method signature="TestngDependOnGroups.fourthMethod_class1()[pri:0, instance:testngconcepts.TestngDependOnGroups@3059cbc]" name="fourthMethod_class1" class="testngconcepts.TestngDependOnGroups"/>
+      </group> <!-- sanity1 -->
     </groups>
-    <test started-at="2022-02-04T10:56:02 EET" name="Test" finished-at="2022-02-04T10:56:15 EET" duration-ms="12606">
-      <class name="tests.AmazonMainPageTests">
-        <test-method is-config="true" signature="SetUpTest()[pri:0, instance:tests.AmazonMainPageTests@5d7148e2]" started-at="2022-02-04T10:56:02 EET" name="SetUpTest" finished-at="2022-02-04T10:56:06 EET" duration-ms="3983" status="PASS">
+    <test started-at="2022-02-04T13:48:43 EET" name="Default test" finished-at="2022-02-04T13:48:43 EET" duration-ms="31">
+      <class name="testngconcepts.TestngDependOnGroups">
+        <test-method signature="firstMethod_class1()[pri:0, instance:testngconcepts.TestngDependOnGroups@3059cbc]" started-at="2022-02-04T13:48:43 EET" name="firstMethod_class1" finished-at="2022-02-04T13:48:43 EET" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUpTest -->
-        <test-method signature="enterProduct()[pri:0, instance:tests.AmazonMainPageTests@5d7148e2]" started-at="2022-02-04T10:56:06 EET" name="enterProduct" finished-at="2022-02-04T10:56:06 EET" duration-ms="69" status="PASS">
+        </test-method> <!-- firstMethod_class1 -->
+        <test-method signature="fourthMethod_class1()[pri:0, instance:testngconcepts.TestngDependOnGroups@3059cbc]" started-at="2022-02-04T13:48:43 EET" name="fourthMethod_class1" finished-at="2022-02-04T13:48:43 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterProduct -->
-        <test-method signature="searchProduct()[pri:1, instance:tests.AmazonMainPageTests@5d7148e2]" started-at="2022-02-04T10:56:06 EET" name="searchProduct" finished-at="2022-02-04T10:56:08 EET" duration-ms="1766" status="PASS">
+        </test-method> <!-- fourthMethod_class1 -->
+        <test-method signature="secondMethod_class1()[pri:0, instance:testngconcepts.TestngDependOnGroups@3059cbc]" started-at="2022-02-04T13:48:43 EET" name="secondMethod_class1" finished-at="2022-02-04T13:48:43 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProduct -->
-        <test-method signature="add()[pri:2, instance:tests.AmazonMainPageTests@5d7148e2]" started-at="2022-02-04T10:56:08 EET" name="add" finished-at="2022-02-04T10:56:11 EET" duration-ms="2628" status="PASS">
+        </test-method> <!-- secondMethod_class1 -->
+        <test-method signature="thirdMethod_class1()[pri:0, instance:testngconcepts.TestngDependOnGroups@3059cbc]" started-at="2022-02-04T13:48:43 EET" name="thirdMethod_class1" depends-on-groups="sanity1" finished-at="2022-02-04T13:48:43 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AmazonMainPageTests@5d7148e2]" started-at="2022-02-04T10:56:11 EET" name="tearDown" finished-at="2022-02-04T10:56:15 EET" duration-ms="4136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.AmazonMainPageTests -->
-    </test> <!-- Test -->
-  </suite> <!-- SuiteUpd -->
+        </test-method> <!-- thirdMethod_class1 -->
+      </class> <!-- testngconcepts.TestngDependOnGroups -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
