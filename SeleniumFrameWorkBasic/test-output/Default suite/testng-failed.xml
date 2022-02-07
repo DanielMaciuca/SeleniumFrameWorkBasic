@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AmazonMainPageTests">
+      <class name="testngconcepts.testngTimeOut">
         <methods>
           <include name="SetUpTest"/>
+          <include name="enterProduct"/>
           <include name="tearDown"/>
-          <include name="myMethod"/>
         </methods>
-      </class> <!-- tests.AmazonMainPageTests -->
+      </class> <!-- testngconcepts.testngTimeOut -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
