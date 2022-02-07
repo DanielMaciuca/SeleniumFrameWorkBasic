@@ -1,4 +1,4 @@
-package testngconcepts;
+package testngconcepts.annotations;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;

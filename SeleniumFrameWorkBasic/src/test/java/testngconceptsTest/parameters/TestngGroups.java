@@ -1,4 +1,4 @@
-package testngconcepts;
+package testngconceptsTest.parameters;
 import org.testng.annotations.Test;
 
 public class TestngGroups {

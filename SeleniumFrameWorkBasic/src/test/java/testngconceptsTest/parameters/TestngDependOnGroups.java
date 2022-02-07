@@ -1,4 +1,4 @@
-package testngconcepts;
+package testngconceptsTest.parameters;
 import org.testng.annotations.Test;
 
 public class TestngDependOnGroups {
@@ -21,9 +21,15 @@ public class TestngDependOnGroups {
 		System.out.println("Fourth Method Class 1");
 	}
 	
-	@Test()
+	@Test(groups = {"Regression"})
 	public void secondMethod_class1() {
 
 		System.out.println("Second Method Class 1");
+	}
+	
+	@Test(description = "ala bala portocala")
+	public void lastMethod_class1() {
+
+		System.out.println("Last Method Class 1");
 	}
 }
