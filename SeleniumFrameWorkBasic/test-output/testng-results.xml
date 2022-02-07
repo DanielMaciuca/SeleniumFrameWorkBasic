@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-07T12:28:00 EET" name="Suite" finished-at="2022-02-07T12:28:01 EET" duration-ms="32">
+  <suite started-at="2022-02-07T15:21:56 EET" name="Default suite" finished-at="2022-02-07T15:21:56 EET" duration-ms="28">
     <groups>
-      <group name="sanity1">
-        <method signature="TestngDependOnGroups.firstMethod_class1()[pri:0, instance:testngconceptsTest.parameters.TestngDependOnGroups@4d02f94e]" name="firstMethod_class1" class="testngconceptsTest.parameters.TestngDependOnGroups"/>
-        <method signature="TestngDependOnGroups.fourthMethod_class1()[pri:0, instance:testngconceptsTest.parameters.TestngDependOnGroups@4d02f94e]" name="fourthMethod_class1" class="testngconceptsTest.parameters.TestngDependOnGroups"/>
-      </group> <!-- sanity1 -->
-      <group name="Regression">
-        <method signature="TestngDependOnGroups.secondMethod_class1()[pri:0, instance:testngconceptsTest.parameters.TestngDependOnGroups@4d02f94e]" name="secondMethod_class1" class="testngconceptsTest.parameters.TestngDependOnGroups"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2022-02-07T12:28:00 EET" name="Test" finished-at="2022-02-07T12:28:01 EET" duration-ms="32">
-      <class name="testngconceptsTest.parameters.TestngDependOnGroups">
-        <test-method signature="firstMethod_class1()[pri:0, instance:testngconceptsTest.parameters.TestngDependOnGroups@4d02f94e]" started-at="2022-02-07T12:28:00 EET" name="firstMethod_class1" finished-at="2022-02-07T12:28:01 EET" duration-ms="4" status="PASS">
+    <test started-at="2022-02-07T15:21:56 EET" name="Default test" finished-at="2022-02-07T15:21:56 EET" duration-ms="28">
+      <class name="testngconcepts.Assertions">
+        <test-method signature="myMethod()[pri:0, instance:testngconcepts.Assertions@6babf3bf]" started-at="2022-02-07T15:21:56 EET" name="myMethod" finished-at="2022-02-07T15:21:56 EET" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- firstMethod_class1 -->
-        <test-method signature="fourthMethod_class1()[pri:0, instance:testngconceptsTest.parameters.TestngDependOnGroups@4d02f94e]" started-at="2022-02-07T12:28:01 EET" name="fourthMethod_class1" finished-at="2022-02-07T12:28:01 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- myMethod -->
+        <test-method signature="myMethod2()[pri:0, instance:testngconcepts.Assertions@6babf3bf]" started-at="2022-02-07T15:21:56 EET" name="myMethod2" finished-at="2022-02-07T15:21:56 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fourthMethod_class1 -->
-        <test-method signature="lastMethod_class1()[pri:0, instance:testngconceptsTest.parameters.TestngDependOnGroups@4d02f94e]" started-at="2022-02-07T12:28:01 EET" name="lastMethod_class1" description="ala bala portocala" finished-at="2022-02-07T12:28:01 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- myMethod2 -->
+        <test-method signature="myMethod3()[pri:0, instance:testngconcepts.Assertions@6babf3bf]" started-at="2022-02-07T15:21:56 EET" name="myMethod3" finished-at="2022-02-07T15:21:56 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lastMethod_class1 -->
-        <test-method signature="secondMethod_class1()[pri:0, instance:testngconceptsTest.parameters.TestngDependOnGroups@4d02f94e]" started-at="2022-02-07T12:28:01 EET" name="secondMethod_class1" finished-at="2022-02-07T12:28:01 EET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- secondMethod_class1 -->
-        <test-method signature="thirdMethod_class1()[pri:0, instance:testngconceptsTest.parameters.TestngDependOnGroups@4d02f94e]" started-at="2022-02-07T12:28:01 EET" name="thirdMethod_class1" depends-on-groups="sanity1" finished-at="2022-02-07T12:28:01 EET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- thirdMethod_class1 -->
-      </class> <!-- testngconceptsTest.parameters.TestngDependOnGroups -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- myMethod3 -->
+      </class> <!-- testngconcepts.Assertions -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,17 +1,15 @@
 package testngconceptsTest.parameters;
+
 import java.time.Duration;
 
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 import pageobjects.MainPageAmazon;
 import utils.Base;
 
-@Listeners({utils.Listeners.class})
+public class TestnginvocationTimeOut extends Base {
 
-public class testngTimeOut extends Base{
-
-	@Test(priority = 0, timeOut=1)
-
+	@Test(invocationCount = 2, invocationTimeOut=500)
 	public void enterProduct() {
 
 		//create a Main page object in order to access the sendKeys function
@@ -37,6 +35,4 @@ public class testngTimeOut extends Base{
 		add.addToCart();
 
 	}
-
-
 }

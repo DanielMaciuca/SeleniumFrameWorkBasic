@@ -1,7 +1,7 @@
 package testngconceptsTest.parameters;
 import org.testng.annotations.Test;
 
-public class TestngDependOnGroups {
+public class TestngDependsOnGroups {
 
 	@Test(groups= {"sanity1"})
 	public void firstMethod_class1() {
