@@ -23,7 +23,7 @@ public class CloseBroswser {
 		//driver.close(); //closes only the focused current tab, controlled by the driver
 
 		driver.quit(); //closes all tabs
-
+		//only a comment from githumb
 	}
 
 }
