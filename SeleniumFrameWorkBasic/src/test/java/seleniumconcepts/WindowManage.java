@@ -21,7 +21,7 @@ public class WindowManage {
 		System.out.println(driver.manage().window().getSize().getHeight());
 
 		System.out.println(driver.manage().window().getSize().getWidth());
-
+		
 		//driver.manage().window().maximize();
 
 		//driver.manage().window().fullscreen(); //title bar is not display anymore

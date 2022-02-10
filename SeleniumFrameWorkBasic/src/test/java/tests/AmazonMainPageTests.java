@@ -32,7 +32,6 @@ public class AmazonMainPageTests extends Base {
 	public void add() {	
 
 		MainPageAmazon add = new MainPageAmazon();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		add.addToCart();
 
 	}
