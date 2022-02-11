@@ -35,7 +35,7 @@ public class ImplicitWait {
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 
 		//driver.quit();
-
+		//only a comment
 
 	}
 
