@@ -1,4 +1,4 @@
-package properties;
+package seleniumconcepts;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

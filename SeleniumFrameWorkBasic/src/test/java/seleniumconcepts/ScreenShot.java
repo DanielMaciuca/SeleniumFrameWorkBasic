@@ -2,6 +2,9 @@ package seleniumconcepts;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -22,11 +25,14 @@ public class ScreenShot {
 		driver.get("https://www.amazon.com/");
 
 		File fileSource =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //take the screenshot
-
 		//import commons-io in order to save/view the screenshot
 		//screenshot folder is automatically created
-		FileUtils.copyFile(fileSource, new File("./screenshots/screen.png"));
 
+		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+
+		FileUtils.copyFile(fileSource, new File("./screenshots/"+ timeStamp + ".png" ));
+
+		driver.close();
 
 	}
 
