@@ -1,10 +1,19 @@
 package utils;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listeners implements ITestListener {
+//Extends Base class in order to have the same driver instance onTestFailure method
+public class Listeners extends Base implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -24,8 +33,22 @@ public class Listeners implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		//ITestListener.super.onTestFailure(result);
+		File fileSource =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //take the screenshot
+		//import commons-io in order to save/view the screenshot
+		//screenshot folder is automatically created
+
+		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+
+		try {
+			FileUtils.copyFile(fileSource, new File("./screenshots/"+ timeStamp + ".png" ));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		System.out.println("Test was failed, screenshot make");
+
+
 	}
 
 	@Override

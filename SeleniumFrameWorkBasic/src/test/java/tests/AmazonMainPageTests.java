@@ -1,6 +1,7 @@
 package tests;
 import java.time.Duration;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageobjects.MainPageAmazon;
@@ -36,4 +37,12 @@ public class AmazonMainPageTests extends Base {
 
 	}
 
+	@Test(priority=3)
+	public void myMethod2() {
+
+		int a = 3;
+
+		Assert.assertTrue(a > 4);
+
+	}
 }
