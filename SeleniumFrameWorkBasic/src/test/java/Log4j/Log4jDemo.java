@@ -10,7 +10,7 @@ public class Log4jDemo {
 	public static void main(String[] args) {
 
 		//System.out.println("this is first line");
-		//It only prints the error message and the fatal message because there is not configuration file defined
+		//It only prints the error message and the fatal message because there is not configuration file defined.
 
 		logger.info("This is info message");
 		logger.error("This is an error message");
