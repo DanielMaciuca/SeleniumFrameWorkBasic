@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngconcepts.testngParameters">
+      <class name="tests.AmazonMainPageTests2">
         <methods>
-          <include name="method"/>
+          <include name="myMethod2"/>
+          <include name="SetUpTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testngconcepts.testngParameters -->
+      </class> <!-- tests.AmazonMainPageTests2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

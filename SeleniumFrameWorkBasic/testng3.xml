@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testngconcepts.Class1"/>
-       <class name="testngconcepts.Class2"/>
-        <class name="testngconcepts.Class3"/>
+      <class name="tests.AmazonMainPageTests2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

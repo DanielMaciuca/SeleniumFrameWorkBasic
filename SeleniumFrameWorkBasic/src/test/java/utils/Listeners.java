@@ -13,6 +13,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 //Extends Base class in order to have the same driver instance onTestFailure method
+// For test executing the listener is put in testng.xml file
 public class Listeners extends Base implements ITestListener {
 
 	@Override
