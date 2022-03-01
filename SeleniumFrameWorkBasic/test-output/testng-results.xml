@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-01T11:16:58 EET" name="SuiteUpd" finished-at="2022-03-01T11:17:10 EET" duration-ms="11393">
+  <suite started-at="2022-03-01T11:26:03 EET" name="SuiteUpd" finished-at="2022-03-01T11:26:16 EET" duration-ms="12151">
     <groups>
     </groups>
-    <test started-at="2022-03-01T11:16:58 EET" name="Test" finished-at="2022-03-01T11:17:10 EET" duration-ms="11393">
+    <test started-at="2022-03-01T11:26:03 EET" name="Test" finished-at="2022-03-01T11:26:16 EET" duration-ms="12151">
       <class name="tests.AmazonMainPageTests">
-        <test-method is-config="true" signature="SetUpTest()[pri:0, instance:tests.AmazonMainPageTests@55e8ec2f]" started-at="2022-03-01T11:16:58 EET" name="SetUpTest" finished-at="2022-03-01T11:17:02 EET" duration-ms="4316" status="PASS">
+        <test-method is-config="true" signature="SetUpTest()[pri:0, instance:tests.AmazonMainPageTests@773f7880]" started-at="2022-03-01T11:26:03 EET" name="SetUpTest" finished-at="2022-03-01T11:26:08 EET" duration-ms="4194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpTest -->
-        <test-method signature="enterProduct()[pri:0, instance:tests.AmazonMainPageTests@55e8ec2f]" started-at="2022-03-01T11:17:03 EET" name="enterProduct" finished-at="2022-03-01T11:17:03 EET" duration-ms="54" status="PASS">
+        <test-method signature="enterProduct()[pri:0, instance:tests.AmazonMainPageTests@773f7880]" started-at="2022-03-01T11:26:08 EET" name="enterProduct" finished-at="2022-03-01T11:26:08 EET" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterProduct -->
-        <test-method signature="searchProduct()[pri:1, instance:tests.AmazonMainPageTests@55e8ec2f]" started-at="2022-03-01T11:17:03 EET" name="searchProduct" finished-at="2022-03-01T11:17:04 EET" duration-ms="1817" status="PASS">
+        <test-method signature="searchProduct()[pri:1, instance:tests.AmazonMainPageTests@773f7880]" started-at="2022-03-01T11:26:08 EET" name="searchProduct" finished-at="2022-03-01T11:26:10 EET" duration-ms="1934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method signature="add()[pri:2, instance:tests.AmazonMainPageTests@55e8ec2f]" started-at="2022-03-01T11:17:04 EET" name="add" finished-at="2022-03-01T11:17:05 EET" duration-ms="889" status="PASS">
+        <test-method signature="add()[pri:2, instance:tests.AmazonMainPageTests@773f7880]" started-at="2022-03-01T11:26:10 EET" name="add" finished-at="2022-03-01T11:26:11 EET" duration-ms="1637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add -->
-        <test-method signature="myMethod2()[pri:3, instance:tests.AmazonMainPageTests@55e8ec2f]" started-at="2022-03-01T11:17:05 EET" name="myMethod2" finished-at="2022-03-01T11:17:05 EET" duration-ms="2" status="FAIL">
+        <test-method signature="myMethod2()[pri:3, instance:tests.AmazonMainPageTests@773f7880]" started-at="2022-03-01T11:26:11 EET" name="myMethod2" finished-at="2022-03-01T11:26:11 EET" duration-ms="2" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -69,7 +69,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myMethod2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AmazonMainPageTests@55e8ec2f]" started-at="2022-03-01T11:17:05 EET" name="tearDown" finished-at="2022-03-01T11:17:10 EET" duration-ms="4151" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AmazonMainPageTests@773f7880]" started-at="2022-03-01T11:26:11 EET" name="tearDown" finished-at="2022-03-01T11:26:16 EET" duration-ms="4160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
