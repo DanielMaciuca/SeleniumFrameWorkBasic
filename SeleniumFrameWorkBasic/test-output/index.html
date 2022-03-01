@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-SuiteUpd" class="navigator-link">
+              <span class="suite-name border-failed">SuiteUpd</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\maciu\AppData\Local\Temp\testng-eclipse-673508216\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-SuiteUpd" class="navigator-link ">
+                    <span>C:\Users\maciu\git\GitLocalRepo\SeleniumFrameWorkBasic\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-SuiteUpd" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-SuiteUpd" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-SuiteUpd" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-SuiteUpd" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-SuiteUpd" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-SuiteUpd" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteUpd" class="hide-methods failed suite-SuiteUpd"> (hide)</a> <!-- hide-methods failed suite-SuiteUpd -->
+                      <a href="#" panel-name="suite-SuiteUpd" class="show-methods failed suite-SuiteUpd"> (show)</a> <!-- show-methods failed suite-SuiteUpd -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteUpd">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.AmazonMainPageTests" class="method navigator-link" hash-for-method="myMethod2">myMethod2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteUpd -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-SuiteUpd" class="hide-methods passed suite-SuiteUpd"> (hide)</a> <!-- hide-methods passed suite-SuiteUpd -->
+                      <a href="#" panel-name="suite-SuiteUpd" class="show-methods passed suite-SuiteUpd"> (show)</a> <!-- show-methods passed suite-SuiteUpd -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-SuiteUpd">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Log4j.Log4jDemo" class="method navigator-link" hash-for-method="method">method</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.AmazonMainPageTests" class="method navigator-link" hash-for-method="add">add</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.AmazonMainPageTests" class="method navigator-link" hash-for-method="enterProduct">enterProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.AmazonMainPageTests" class="method navigator-link" hash-for-method="searchProduct">searchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SuiteUpd -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,114 +142,185 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-SuiteUpd" class="panel SuiteUpd">
+          <div class="suite-SuiteUpd-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Log4j.Log4jDemo</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.AmazonMainPageTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="method">
-                  </a> <!-- method -->
-                  <span class="method-name">method</span>
+                  <a name="myMethod2">
+                  </a> <!-- myMethod2 -->
+                  <span class="method-name">myMethod2</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.AmazonMainPageTests.myMethod2(AmazonMainPageTests.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-SuiteUpd-class-failed -->
+          <div class="suite-SuiteUpd-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AmazonMainPageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterProduct">
+                  </a> <!-- enterProduct -->
+                  <span class="method-name">enterProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct">
+                  </a> <!-- searchProduct -->
+                  <span class="method-name">searchProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteUpd-class-passed -->
+        </div> <!-- panel SuiteUpd -->
+        <div panel-name="test-xml-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\maciu\AppData\Local\Temp\testng-eclipse-673508216\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\maciu\git\GitLocalRepo\SeleniumFrameWorkBasic\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;SuiteUpd&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Log4j.Log4jDemo&quot;/&gt;
+      &lt;class name=&quot;tests.AmazonMainPageTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- SuiteUpd --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for SuiteUpd</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for SuiteUpd</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for SuiteUpd</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_SuiteUpd');
+function tableData_SuiteUpd() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'method')
-data.setCell(0, 2, 'Log4j.Log4jDemo')
-data.setCell(0, 3, 8);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'searchProduct')
+data.setCell(0, 2, 'tests.AmazonMainPageTests')
+data.setCell(0, 3, 1817);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'add')
+data.setCell(1, 2, 'tests.AmazonMainPageTests')
+data.setCell(1, 3, 889);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'enterProduct')
+data.setCell(2, 2, 'tests.AmazonMainPageTests')
+data.setCell(2, 3, 54);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'myMethod2')
+data.setCell(3, 2, 'tests.AmazonMainPageTests')
+data.setCell(3, 3, 2);
+window.suiteTableData['SuiteUpd']= { tableData: data, tableDiv: 'times-div-SuiteUpd'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-SuiteUpd">
+              </div> <!-- times-div-SuiteUpd -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for SuiteUpd</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Log4j.Log4jDemo</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">method</span>
+              <div class="chronological-class-name">tests.AmazonMainPageTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">SetUpTest</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">enterProduct</span>
+                <span class="method-start">4331 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">4389 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">6207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">myMethod2</span>
+                <span class="method-start">7097 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7235 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
