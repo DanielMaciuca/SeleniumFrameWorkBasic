@@ -35,7 +35,6 @@ public class Checkbox_Radio_Buttons {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("interest_market_c0")));
 		
 		driver.findElement(By.id("doi1")).click();
-		
 
 	}
 
