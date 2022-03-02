@@ -37,12 +37,4 @@ public class AmazonMainPageTests extends Base {
 
 	}
 
-	@Test(priority=3)
-	public void myMethod2() {
-
-		int a = 3;
-
-		Assert.assertTrue(a > 4);
-
-	}
 }

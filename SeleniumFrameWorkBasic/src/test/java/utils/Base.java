@@ -57,7 +57,7 @@ public class Base {
 	@AfterTest
 	public void tearDown() {
 
-		driver.close();
+		driver.quit();
 		logger.info("Browser was closed");
 	}
 
