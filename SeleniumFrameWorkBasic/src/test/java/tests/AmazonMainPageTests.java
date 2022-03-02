@@ -14,7 +14,7 @@ public class AmazonMainPageTests extends Base {
 	@Test(priority=0)
 	public void enterProduct() {
 
-		//create a Main page object in order to access the sendKeys function.
+		//create a Main page object in order to access the sendKeys function. re
 		MainPageAmazon input  = new MainPageAmazon();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		input.sendKeys("cars");
