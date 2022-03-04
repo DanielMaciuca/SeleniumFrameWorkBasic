@@ -8,7 +8,8 @@
 
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="tests.AmazonMainPageTests" />		
+			<class name="tests.AmazonMainPageTests" />	
+			<class name="tests.SignUpTests" />	
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

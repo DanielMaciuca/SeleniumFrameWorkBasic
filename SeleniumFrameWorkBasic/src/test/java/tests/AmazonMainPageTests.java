@@ -37,17 +37,20 @@ public class AmazonMainPageTests extends Base {
 		add.addToCart();
 
 	}
-	
-	@Test
-	
-	public void method() {
-		
-		String a = "car";
-		
-		Assert.assertEquals(a, "cars");
-		
-		
-	}
-	
+
+
+	/*
+	 * @Test
+	 * 
+	 * public void method() {
+	 * 
+	 * String a = "car";
+	 * 
+	 * Assert.assertEquals(a, "cars");
+	 * 
+	 * }
+	 */
+
+
 
 }

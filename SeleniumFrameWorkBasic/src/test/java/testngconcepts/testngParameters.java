@@ -12,7 +12,7 @@ public class testngParameters {
 	@Parameters({"Name", "Age"})
 	public void method(String nume, int varsta) {
 
-		System.out.println(nume + varsta);
+		System.out.println(nume + " " +  varsta);
 
 	}
 
