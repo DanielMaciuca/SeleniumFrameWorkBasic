@@ -54,11 +54,7 @@ public class Base {
 		}
 	}
 
-	@AfterTest
-	public void tearDown() {
 
-		driver.quit();
-		logger.info("Browser was closed");
-	}
-
+	@AfterTest public void tearDown() {
+		driver.quit(); logger.info("Browser was closed"); }
 }
