@@ -26,8 +26,7 @@ public class PropertiesFile {
 			System.out.println(exp.getCause());
 			System.out.println(exp.getStackTrace());
 
-		}
-		
+		}		
 
 	}
 	

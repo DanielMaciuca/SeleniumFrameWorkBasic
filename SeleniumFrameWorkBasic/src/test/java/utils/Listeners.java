@@ -32,18 +32,24 @@ public class Listeners extends Base implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
+
 		//ITestListener.super.onTestFailure(result);
-		File fileSource =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //take the screenshot
 		//import commons-io in order to save/view the screenshot
 		//screenshot folder is automatically created
+
+		TakesScreenshot screenshot = ((TakesScreenshot)driver);
+
+		File fileSource = screenshot.getScreenshotAs(OutputType.FILE);
 
 		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 
 		try {
+
 			FileUtils.copyFile(fileSource, new File("./screenshots/"+ timeStamp + ".png" ));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		} 
+
+		catch (IOException e) {
+
 			e.printStackTrace();
 		}
 
