@@ -21,7 +21,7 @@ public class DataProviderExample {
 
 		driver.findElement(By.xpath("//input[@id='ap_customer_name']")).sendKeys(username);
 		driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys(password);
-		
+
 	}
 
 	@DataProvider(name = "test1")
@@ -29,15 +29,12 @@ public class DataProviderExample {
 	public Object[][] myDataSet() {
 
 		return new Object[][] 
-		{
+				{
 			{"test1", "test@test1"},
 			{"test2", "test@test2"},
 			{"test3", "test@test3"},
 
-		};
-
-		
-
+				};		
 	}
 
 }
