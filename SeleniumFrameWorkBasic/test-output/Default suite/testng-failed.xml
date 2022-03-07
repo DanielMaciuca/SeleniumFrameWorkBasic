@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageobjects.SignUp">
+      <class name="seleniumconcepts.DataProviderExample">
         <methods>
-          <include name="SetUpTest"/>
-          <include name="gotoPage"/>
-          <include name="tearDown"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- pageobjects.SignUp -->
+      </class> <!-- seleniumconcepts.DataProviderExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
