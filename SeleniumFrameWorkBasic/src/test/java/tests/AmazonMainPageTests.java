@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import pageobjects.MainPageAmazon;
 import utils.Base;
 
+//https://www.youtube.com/watch?v=wXnoK-MivP4&list=PL5fOKT7XR42Om0spD8QtxuQ4Y9ONra6dq&index=10
+
 public class AmazonMainPageTests extends Base {
 
 	//Extends the Base Class in order to run @BeforeTest and @AfterTest
