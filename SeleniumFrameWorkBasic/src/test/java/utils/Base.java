@@ -40,7 +40,6 @@ public class Base {
 			//WebDriver driver = new ChromeDriver(); --won't work it will be a new object
 
 			WebDriverManager.chromedriver().setup();
-
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
 
