@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-SuiteUpd" class="navigator-link">
+              <span class="suite-name border-failed">SuiteUpd</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\maciu\AppData\Local\Temp\testng-eclipse-1481637444\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-SuiteUpd" class="navigator-link ">
+                    <span>C:\Users\maciu\git\GitLocalRepo\SeleniumFrameWorkBasic\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-SuiteUpd" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-SuiteUpd" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-SuiteUpd" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-SuiteUpd" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-SuiteUpd" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-SuiteUpd" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,31 +93,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteUpd" class="hide-methods failed suite-SuiteUpd"> (hide)</a> <!-- hide-methods failed suite-SuiteUpd -->
+                      <a href="#" panel-name="suite-SuiteUpd" class="show-methods failed suite-SuiteUpd"> (show)</a> <!-- show-methods failed suite-SuiteUpd -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteUpd">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.AmazonMainPageTests" class="method navigator-link" hash-for-method="enterProduct">enterProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.AmazonMainPageTests" class="method navigator-link" hash-for-method="method">method</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteUpd -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-SuiteUpd" class="hide-methods passed suite-SuiteUpd"> (hide)</a> <!-- hide-methods passed suite-SuiteUpd -->
+                      <a href="#" panel-name="suite-SuiteUpd" class="show-methods passed suite-SuiteUpd"> (show)</a> <!-- show-methods passed suite-SuiteUpd -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-SuiteUpd">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testngconcepts.DataProviderExample" class="method navigator-link" hash-for-method="test(test3, test@test3)">test(test3, test@test3)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.AmazonMainPageTests" class="method navigator-link" hash-for-method="add">add</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testngconcepts.DataProviderExample" class="method navigator-link" hash-for-method="test(test2, test@test2)">test(test2, test@test2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.SignUpTests" class="method navigator-link" hash-for-method="enterEmail">enterEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testngconcepts.DataProviderExample" class="method navigator-link" hash-for-method="test(test1, test@test1)">test(test1, test@test1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.SignUpTests" class="method navigator-link" hash-for-method="enterName">enterName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.SignUpTests" class="method navigator-link" hash-for-method="go">go</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.AmazonMainPageTests" class="method navigator-link" hash-for-method="searchProduct">searchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteUpd" title="tests.SignUpTests" class="method navigator-link" hash-for-method="signUp">signUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SuiteUpd -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,147 +162,296 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-SuiteUpd" class="panel SuiteUpd">
+          <div class="suite-SuiteUpd-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testngconcepts.DataProviderExample</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.AmazonMainPageTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test(test3, test@test3)">
-                  </a> <!-- test(test3, test@test3) -->
-                  <span class="method-name">test</span>
-                  <span class="parameters">(test3, test@test3)</span>
+                  <a name="enterProduct">
+                  </a> <!-- enterProduct -->
+                  <span class="method-name">enterProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}
+  (Session info: chrome=121.0.6167.140)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-PJ8TGSP&apos;, ip: &apos;192.168.0.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5b1868e41296bebf67e47ec2922390b, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\maciu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60670/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5b1868e41296bebf67e47ec2922390b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pageobjects.MainPageAmazon.sendKeys(MainPageAmazon.java:19)
+	at tests.AmazonMainPageTests.enterProduct(AmazonMainPageTests.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test(test2, test@test2)">
-                  </a> <!-- test(test2, test@test2) -->
-                  <span class="method-name">test</span>
-                  <span class="parameters">(test2, test@test2)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test(test1, test@test1)">
-                  </a> <!-- test(test1, test@test1) -->
-                  <span class="method-name">test</span>
-                  <span class="parameters">(test1, test@test1)</span>
+                  <a name="method">
+                  </a> <!-- method -->
+                  <span class="method-name">method</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [cars] but found [car]
+	at tests.AmazonMainPageTests.method(AmazonMainPageTests.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-SuiteUpd-class-failed -->
+          <div class="suite-SuiteUpd-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SignUpTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterEmail">
+                  </a> <!-- enterEmail -->
+                  <span class="method-name">enterEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterName">
+                  </a> <!-- enterName -->
+                  <span class="method-name">enterName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="go">
+                  </a> <!-- go -->
+                  <span class="method-name">go</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp">
+                  </a> <!-- signUp -->
+                  <span class="method-name">signUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteUpd-class-passed -->
+          <div class="suite-SuiteUpd-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AmazonMainPageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct">
+                  </a> <!-- searchProduct -->
+                  <span class="method-name">searchProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteUpd-class-passed -->
+        </div> <!-- panel SuiteUpd -->
+        <div panel-name="test-xml-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\maciu\AppData\Local\Temp\testng-eclipse-1481637444\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\maciu\git\GitLocalRepo\SeleniumFrameWorkBasic\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;SuiteUpd&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testngconcepts.DataProviderExample&quot;/&gt;
+      &lt;class name=&quot;tests.AmazonMainPageTests&quot;/&gt;
+      &lt;class name=&quot;tests.SignUpTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- SuiteUpd --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for SuiteUpd</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for SuiteUpd</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for SuiteUpd</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_SuiteUpd');
+function tableData_SuiteUpd() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'testngconcepts.DataProviderExample')
-data.setCell(0, 3, 5188);
+data.setCell(0, 1, 'enterProduct')
+data.setCell(0, 2, 'tests.AmazonMainPageTests')
+data.setCell(0, 3, 5071);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test')
-data.setCell(1, 2, 'testngconcepts.DataProviderExample')
-data.setCell(1, 3, 4474);
+data.setCell(1, 1, 'searchProduct')
+data.setCell(1, 2, 'tests.AmazonMainPageTests')
+data.setCell(1, 3, 2896);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test')
-data.setCell(2, 2, 'testngconcepts.DataProviderExample')
-data.setCell(2, 3, 3822);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'signUp')
+data.setCell(2, 2, 'tests.SignUpTests')
+data.setCell(2, 3, 1058);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'add')
+data.setCell(3, 2, 'tests.AmazonMainPageTests')
+data.setCell(3, 3, 916);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'go')
+data.setCell(4, 2, 'tests.SignUpTests')
+data.setCell(4, 3, 704);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'enterName')
+data.setCell(5, 2, 'tests.SignUpTests')
+data.setCell(5, 3, 75);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'enterEmail')
+data.setCell(6, 2, 'tests.SignUpTests')
+data.setCell(6, 3, 53);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'method')
+data.setCell(7, 2, 'tests.AmazonMainPageTests')
+data.setCell(7, 3, 2);
+window.suiteTableData['SuiteUpd']= { tableData: data, tableDiv: 'times-div-SuiteUpd'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-SuiteUpd">
+              </div> <!-- times-div-SuiteUpd -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for SuiteUpd</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SignUpTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SetUpTest</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-SuiteUpd" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testngconcepts.DataProviderExample</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test(test1, test@test1)</span>
+              <div class="chronological-class-name">tests.AmazonMainPageTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">SetUpTest</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">enterProduct</span>
+                <span class="method-start">3530 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test(test2, test@test2)</span>
-                <span class="method-start">5191 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">method</span>
+                <span class="method-start">8717 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test(test3, test@test3)</span>
-                <span class="method-start">9014 ms</span>
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">8840 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">11737 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SignUpTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">go</span>
+                <span class="method-start">12655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp</span>
+                <span class="method-start">13360 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterName</span>
+                <span class="method-start">14419 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterEmail</span>
+                <span class="method-start">14495 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AmazonMainPageTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14549 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

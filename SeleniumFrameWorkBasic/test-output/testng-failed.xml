@@ -8,6 +8,7 @@
     <classes>
       <class name="tests.AmazonMainPageTests">
         <methods>
+          <include name="enterProduct"/>
           <include name="SetUpTest"/>
           <include name="tearDown"/>
           <include name="method"/>

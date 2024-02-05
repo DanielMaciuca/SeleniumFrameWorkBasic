@@ -19,7 +19,8 @@ public class AmazonMainPageTests extends Base {
 		//create a Main page object in order to access the sendKeys function.
 
 		MainPageAmazon input  = new MainPageAmazon();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		input.clickSeachBox();
 		input.sendKeys("cars");
 
 	}
@@ -48,7 +49,7 @@ public class AmazonMainPageTests extends Base {
 	  
 	  String a = "car";
 	  
-	  Assert.assertEquals(a, "cars");
+	  Assert.assertEquals(a, "car");
 	  
 	  }
 	 

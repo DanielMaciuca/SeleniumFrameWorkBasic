@@ -9,6 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -37,9 +38,17 @@ public class Base {
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 
 			//WebDriver driver = new ChromeDriver(); --won't work it will be a new object
-			WebDriverManager.chromedriver().setup();			
-			driver = new ChromeDriver();
+
+			WebDriverManager.chromedriver().setup();
+
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+
+			driver = new ChromeDriver(options);
 			driver.get("https://www.amazon.com/");
+
+
+
 			driver.get(prop.getProperty("url"));
 			logger.info("Browser is Chrome");
 		}
