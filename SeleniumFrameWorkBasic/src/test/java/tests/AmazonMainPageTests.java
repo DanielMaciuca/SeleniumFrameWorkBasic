@@ -1,4 +1,5 @@
 package tests;
+
 import java.time.Duration;
 
 import org.testng.Assert;
@@ -11,49 +12,46 @@ import utils.Base;
 
 public class AmazonMainPageTests extends Base {
 
-	//Extends the Base Class in order to run @BeforeTest and @AfterTest
+    //Extends the Base Class in order to run @BeforeTest and @AfterTest
 
-	@Test(priority=0)
-	public void enterProduct() {
+    @Test(priority = 0)
+    public void enterProduct() {
 
-		//create a Main page object in order to access the sendKeys function.
+        //create a Main page object in order to access the sendKeys function.
 
-		MainPageAmazon input  = new MainPageAmazon();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		input.clickSeachBox();
-		input.sendKeys("cars");
+        MainPageAmazon input = new MainPageAmazon();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        input.clickSeachBox();
+        input.sendKeys("cars");
 
-	}
+    }
 
-	@Test(priority=1)
-	public void searchProduct() {
+    @Test(priority = 1)
+    public void searchProduct() {
 
-		MainPageAmazon search = new MainPageAmazon();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		search.clickSearchButton();
-	}
+        MainPageAmazon search = new MainPageAmazon();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        search.clickSearchButton();
+    }
 
-	@Test(priority=2)
-	public void add() {	
+    @Test(priority = 2)
+    public void add() {
 
-		MainPageAmazon add = new MainPageAmazon();
-		add.addToCart();
+        MainPageAmazon add = new MainPageAmazon();
+        add.addToCart();
 
-	}
+    }
 
 
-	
-	  @Test
-	  
-	  public void method() {
-	  
-	  String a = "car";
-	  
-	  Assert.assertEquals(a, "car");
-	  
-	  }
-	 
+    @Test
 
+    public void method() {
+
+        String a = "car";
+
+        Assert.assertEquals(a, "car");
+
+    }
 
 
 }

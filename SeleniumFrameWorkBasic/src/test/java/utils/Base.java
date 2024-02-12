@@ -45,9 +45,6 @@ public class Base {
 
 			driver = new ChromeDriver(options);
 			driver.get("https://www.amazon.com/");
-
-
-
 			driver.get(prop.getProperty("url"));
 			logger.info("Browser is Chrome");
 		}
