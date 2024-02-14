@@ -18,7 +18,7 @@ public class CloseBroswser {
 
 		driver.get("https://gmail.com/");	
 
-		driver.findElement(By.xpath("//a[@href='https://support.google.com/accounts?hl=ro']")).click();
+		driver.findElement(By.xpath("//a[contains(@href, 'https://support.google.com/accounts')]")).click();
 
 		Thread.sleep(5000);
 
