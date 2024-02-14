@@ -1,34 +1,42 @@
 package seleniumconcepts;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class PageInterogation {
 
-	public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
 
-		WebDriver driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        WebDriver driver = new ChromeDriver(options);
 
-		driver.get("https://gmail.com/");	
+        driver.get("https://emag.ro/");
 
-		System.out.println(driver.getTitle());
+        String getTitle = driver.getTitle();
 
-		System.out.println(driver.getCurrentUrl());
+        System.out.println(getTitle);
 
-		//System.out.println(driver.getPageSource());
+        String getCurrentUrl = driver.getCurrentUrl();
 
-		driver.findElement(By.xpath("//a[@href='https://support.google.com/accounts?hl=ro']")).click();
+        System.out.println(getCurrentUrl);
 
-		Thread.sleep(5000);
+        Thread.sleep(5000);
 
-		//driver.close(); //closes only the focused current tab, controlled by the driver
+        // Get the html code of the page
 
-		driver.quit(); //closes all tabs
+        String getSource = driver.getPageSource();
 
-	}
+        System.out.println(getSource);
+
+        driver.quit();
+
+    }
 
 }
