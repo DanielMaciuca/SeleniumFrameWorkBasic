@@ -26,7 +26,7 @@ public class Locators_1 {
 
         // By.ID
 
-        // driver.findElement(By.id("searchboxTrigger")).click();
+         driver.findElement(By.id("searchboxTrigger")).click();
 
         // By.NAME
 
@@ -36,7 +36,7 @@ public class Locators_1 {
 
         // By.CLASS
 
-         driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
         // driver.findElement(By.className("caret")).click();
 
