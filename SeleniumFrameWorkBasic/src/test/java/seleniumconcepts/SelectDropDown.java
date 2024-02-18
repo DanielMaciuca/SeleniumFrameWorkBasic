@@ -13,32 +13,35 @@ import java.time.Duration;
 
 public class SelectDropDown {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
-		WebDriver driver = new ChromeDriver(options);
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        WebDriver driver = new ChromeDriver(options);
 
-		driver.get("https://www.amazon.com/");
+        driver.get("https://www.sugarcrm.com/uk/request-demo/");
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+        driver.manage().window().maximize();
 
-		WebElement element = driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
+        Thread.sleep(5000);
 
-		Select dropdown = new Select(element);
+        WebElement element = driver.findElement(By.id("how-select"));
 
-		//dropdown.selectByIndex(3);
+        Select dropDown = new Select(element);
 
-		dropdown.selectByValue("search-alias=baby-products-intl-ship"); 
+//		dropDown.selectByIndex(2);
 
-		//dropdown.selectByVisibleText("Baby");
+//      dropDown.selectByValue("Event");
 
-		//dropdown.deselectByIndex(1);
-		//dropdown.deselectByValue("search-alias=baby-products-intl-ship");
-		dropdown.deselectByVisibleText("Baby");
+        dropDown.selectByVisibleText("Internet");
 
-	}
+        //dropdown.deselectByIndex(1);
+        //dropdown.deselectByValue("search-alias=baby-products-intl-ship");
+//		dropdown.deselectByVisibleText("Baby");
+
+    }
 
 }

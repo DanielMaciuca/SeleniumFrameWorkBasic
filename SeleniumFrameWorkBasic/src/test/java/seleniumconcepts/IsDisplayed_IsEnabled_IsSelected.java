@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -22,12 +23,14 @@ public class IsDisplayed_IsEnabled_IsSelected {
 		//So, it’s applicable to any web object and returned true or false.
 
 		//2. isEnabled(): used to confirm whether an element is Enable or disable.
-		//If enable, it would return ‘true’ otherwise ‘false’.
+		//If enabled, it would return ‘true’ otherwise ‘false’.
 
-		//3. isSelected(): method is only applicable for checkbox, drop-down, radio button on a site. it will also returned true or false.
+		//3. isSelected(): method is only applicable for checkbox, drop-down, radio button on a site. it will also return true or false.
 
-		WebDriverManager.firefoxdriver().setup();
-		WebDriver driver = new FirefoxDriver();;
+		WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        WebDriver driver = new ChromeDriver(options);
 
 		driver.get("https://us.megabus.com/account-management/login");	
 

@@ -58,5 +58,6 @@ public class WebElementsExamples {
         String resultText = login.getText();
         System.out.println(resultText);
         driver.quit();
+        
     }
 }
