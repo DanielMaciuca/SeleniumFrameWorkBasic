@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,16 +27,17 @@ public class ExplicitWait {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"finish\"]/h4")));
+        WebElement text = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"finish\"]/h4")));
 
 //        System.out.println(driver.getTitle());
 //
 //        wait.until(ExpectedConditions.titleContains("The Internet"));
 
-
         System.out.println("Element displayed");
 
         System.out.println(driver.findElement(By.xpath("//*[@id=\"finish\"]/h4")).isDisplayed());
+
+//        System.out.println(text.isDisplayed());
 
     }
 
