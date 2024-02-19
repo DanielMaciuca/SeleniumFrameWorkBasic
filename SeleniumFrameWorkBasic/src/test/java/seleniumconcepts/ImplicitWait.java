@@ -14,6 +14,9 @@ public class ImplicitWait {
 
 	public static void main(String[] args) {
 
+		// Applies to all Elements from the page
+		// When the page is loading it searches for the elements in the DOM, if they are not found it waits for the specified time and searches again
+
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");

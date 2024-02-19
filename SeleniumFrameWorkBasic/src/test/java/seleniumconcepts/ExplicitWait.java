@@ -32,6 +32,7 @@ public class ExplicitWait {
 //
 //        wait.until(ExpectedConditions.titleContains("The Internet"));
 
+
         System.out.println("Element displayed");
 
         System.out.println(driver.findElement(By.xpath("//*[@id=\"finish\"]/h4")).isDisplayed());
