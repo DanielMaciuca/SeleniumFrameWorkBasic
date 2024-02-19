@@ -17,7 +17,7 @@ public class BrowserNavigation {
         options.addArguments("--remote-allow-origins=*");
         WebDriver driver = new ChromeDriver(options);
 
-//        driver.get("https://www.emag.ro/");
+//        driver.get("https://www.emag.ro/");/
 //
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 //
