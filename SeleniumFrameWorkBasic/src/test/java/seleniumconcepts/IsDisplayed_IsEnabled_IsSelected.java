@@ -22,7 +22,7 @@ public class IsDisplayed_IsEnabled_IsSelected {
 		//1. isDisplayed(): method is used to verify whether any object on a site is present or not.
 		//So, it’s applicable to any web object and returned true or false.
 
-		//2. isEnabled(): used to confirm whether an element is Enable or disable.
+		//2. isEnabled(): used to confirm whether an element is Enable or disable -> if you can interact (click, type) with the element or not
 		//If enabled, it would return ‘true’ otherwise ‘false’.
 
 		//3. isSelected(): method is only applicable for checkbox, drop-down, radio button on a site. it will also return true or false.
