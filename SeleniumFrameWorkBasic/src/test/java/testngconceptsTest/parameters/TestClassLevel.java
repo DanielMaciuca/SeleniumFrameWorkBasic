@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 @Test
 public class TestClassLevel {
 
+    // If @Test is put at class level, private methods will be ignored
+
     public void myMethod1(){
 
         System.out.println("First method is public");

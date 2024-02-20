@@ -5,6 +5,9 @@ import org.testng.annotations.Test;
 
 public class TestngAlwayRun {
 
+    // If the first method fails the second will be ignored
+    // If you have alwaysRun = true, the second method will not be ignored anymore
+
     @Test()
     public void a_First() {
 

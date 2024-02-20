@@ -4,16 +4,26 @@ import org.testng.annotations.Test;
 
 public class TestngDependsOnMethods {
 
-	@Test()
-	public void b_First() {
+    // Method will be executed only if the dependency was executed successfully
+    // In this case Third will be executed only if Second was executed
 
-		System.out.println("First method");
-	}
+    @Test()
+    public void First() {
 
-	@Test(dependsOnMethods= {"b_First"})
-	public void a_Second() {
+        System.out.println("First method");
+    }
 
-		System.out.println("Second method");
-	}
+    @Test(dependsOnMethods = {"First"})
+    public void Second() {
+
+        System.out.println("Second method");
+    }
+
+    @Test(dependsOnMethods = {"Second"})
+    public void Third() {
+
+        System.out.println("Third method");
+
+    }
 
 }
