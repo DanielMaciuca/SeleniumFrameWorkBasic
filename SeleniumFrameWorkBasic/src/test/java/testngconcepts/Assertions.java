@@ -9,41 +9,34 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Assertions {
 
-	@Test
-	public void myMethod() {
+    @Test
+    public void myMethod() {
 
-		String myString = "test";
+        String myString = "test";
+        Assert.assertEquals(myString, "test");
+    }
 
-		Assert.assertEquals(myString, "test");
+    @Test
+    public void myMethod2() {
+        int a = 5;
+        Assert.assertTrue(a > 4);
 
-	}
+    }
 
-	@Test
-	public void myMethod2() {
+    @Test
+    public void myMethod3() {
 
-		int a = 5;
+        int a = 5;
+        Assert.assertFalse(a < 4);
 
-		Assert.assertTrue(a > 4);
+    }
 
-	}
+    @Test
+    public void myMethod5() {
 
-	@Test
-	public void myMethod3() {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://emag.ro/");
 
-		int a = 5;
-
-		Assert.assertFalse(a < 4);
-
-	}
-
-	@Test
-	public void myMethod5() {
-
-		WebDriverManager.chromedriver().setup();
-
-		WebDriver driver = new ChromeDriver();
-
-		driver.get("https://emag.ro/");
-
-	}
+    }
 }

@@ -17,7 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class IsDisplayed_IsEnabled_IsSelected {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		//1. isDisplayed(): method is used to verify whether any object on a site is present or not.
 		//So, it’s applicable to any web object and returned true or false.
@@ -46,10 +46,10 @@ public class IsDisplayed_IsEnabled_IsSelected {
 
 		//is displayed
 		WebElement mySignup = driver.findElement(By.xpath("//button[@id='signup']"));
-		System.out.println(mySignup.isDisplayed());
+		System.out.println("Botton SignUp button is displayed?" + " " +  mySignup.isDisplayed());
 
 		//is enabled
-		System.out.println(mySignup.isEnabled());
+		System.out.println("Bottom SignUp button is enabled" + " " + mySignup.isEnabled());
 
 		WebElement myCheckbox=driver.findElement(By.xpath("//input[@id='termsAndPrivacy']"));
 		WebDriverWait wait2 = new WebDriverWait(driver,Duration.ofSeconds(10));
