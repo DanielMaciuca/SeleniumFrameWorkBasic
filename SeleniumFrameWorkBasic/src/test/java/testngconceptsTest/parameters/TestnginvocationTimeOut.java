@@ -9,6 +9,8 @@ import utils.Base;
 
 public class TestnginvocationTimeOut extends Base {
 
+	// enterProduct() method needs to be executed twice in 500 milliseconds
+
 	@Test(invocationCount = 2, invocationTimeOut=500)
 	public void enterProduct() {
 

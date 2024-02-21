@@ -1,13 +1,19 @@
 package testngconceptsTest.parameters;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestngDependsOnGroups {
+
+    // You can control the execution of specific groups of tests from testng.xml file
 
     @Test(groups = {"sanity1"})
     public void firstMethod_class1() {
 
         System.out.println("First Method Class 1");
+
+        String myString = "car";
+        Assert.assertEquals("car", myString);
     }
 
     @Test(dependsOnGroups = {"sanity1"})

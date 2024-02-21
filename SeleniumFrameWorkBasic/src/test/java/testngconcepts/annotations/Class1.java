@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class Class1 {
 	
-	@BeforeClass
+	@BeforeMethod
 	public void beforeClass_1() {
 	
 	System.out.println("Before Class 1");

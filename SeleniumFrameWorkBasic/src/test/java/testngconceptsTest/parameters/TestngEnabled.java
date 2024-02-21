@@ -6,7 +6,7 @@ public class TestngEnabled {
 
 // If enabled = false, the method will be skipped during the test run
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void firstMethod() {
 
         System.out.println("First Method");
