@@ -43,7 +43,7 @@ public class AmazonMainPageTests extends Base {
     }
 
 
-    @Test
+    @Test (priority=5)
 
     public void method() {
 

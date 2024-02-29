@@ -31,12 +31,22 @@ public class Assertions {
 
     }
 
-    @Test
-    public void myMethod5() {
+//    @Test
+//    public void myMethod5() {
+//
+//        WebDriverManager.chromedriver().setup();
+//        WebDriver driver = new ChromeDriver();
+//        driver.get("https://emag.ro/");
+//
+//    }
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://emag.ro/");
+    @Test
+
+    public void myMethod6() {
+
+        int a = 5;
+        Assert.assertEquals(a, 4);
 
     }
+
 }
