@@ -11,7 +11,6 @@ public class Assertions {
 
     @Test
     public void myMethod() {
-
         String myString = "test";
         Assert.assertEquals(myString, "test");
     }
@@ -20,12 +19,10 @@ public class Assertions {
     public void myMethod2() {
         int a = 5;
         Assert.assertTrue(a > 4);
-
     }
 
     @Test
     public void myMethod3() {
-
         int a = 5;
         Assert.assertFalse(a < 4);
 
@@ -41,12 +38,16 @@ public class Assertions {
 //    }
 
     @Test
-
     public void myMethod6() {
-
         int a = 5;
         Assert.assertEquals(a, 4);
-
     }
+
+    @Test
+    public void myMethod7(){
+        boolean a = true;
+        Assert.assertTrue(a);
+    }
+
 
 }
