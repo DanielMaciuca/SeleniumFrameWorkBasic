@@ -6,10 +6,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.FindBy;
 
 import java.time.Duration;
 
 public class WebElementsExamples {
+
+    // PAGE FACTORY APPROACH
+
+//    @FindBy(name="username")
+//    private WebElement userNameField;
 
     public static void main(String[] args) throws InterruptedException {
 

@@ -25,7 +25,7 @@ public class Trys {
 
         By element = By.id("searchboxTrigger");
 
-        driver.findElement(element).sendKeys("porto");
+        driver.findElement(element).sendKeys("first portocala");
 
     }
 
@@ -42,7 +42,7 @@ public class Trys {
 
         By element = By.id("searchboxTrigger");
 
-        driver.findElement(element).sendKeys("porto");
+        driver.findElement(element).sendKeys("second portocala");
 
     }
 }
