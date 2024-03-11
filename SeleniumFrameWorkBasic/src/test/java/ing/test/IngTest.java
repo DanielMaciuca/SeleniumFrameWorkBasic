@@ -51,11 +51,13 @@ public class IngTest {
 
         // Currency DropDown
 
-        WebElement currency = driver.findElement(By.id("exchange-visa-trans"));
+        By currencyLocator = By.id("exchange-visa-trans");
 
-        Select currencyDropDown = new Select(currency);
+        WebElement currencyElement = driver.findElement(currencyLocator);
 
-        currency.sendKeys("USD");
+        Select currencyDropDown = new Select(currencyElement);
+
+        currencyDropDown.selectByVisibleText("USD");
 
         System.out.println(currencyDropDown.getFirstSelectedOption().getText());
 
@@ -92,8 +94,6 @@ public class IngTest {
         // Validation
 
         Assert.assertEquals(finalResult, expectedResultParsing);
-
-        // Close the browser
 
         // driver.quit();
     }
