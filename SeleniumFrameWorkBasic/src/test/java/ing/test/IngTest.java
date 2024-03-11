@@ -15,19 +15,27 @@ public class IngTest {
 
     @Test
     public static void main(String[] args) throws InterruptedException {
+
+        // WebDriver initialization
+
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         WebDriver driver = new ChromeDriver(options);
-
         driver.get("https://ing.ro/persoane-fizice/curs-valutar");
         driver.manage().window().maximize();
 
-        WebElement action = driver.findElement(By.id("exchange-type"));
+        // Find the first drop donw
 
-        Select firstDropdown = new Select(action);
+        By actionLocator = By.id("exchange-type");
+
+        WebElement actionLocatorElement = driver.findElement(actionLocator);
+
+        Select firstDropdown = new Select(actionLocatorElement);
 
         firstDropdown.selectByValue("1");
+
+        // Find the ammount
 
         WebElement amount = driver.findElement(By.xpath("//input[@type='number']"));
 
@@ -46,6 +54,7 @@ public class IngTest {
 //        WebElement label = driver.findElement(By.xpath("//label[contains(text(), 'Vreau')]"));
 //        System.out.println(label.getText());
 
+        // Find the Currency drop down
 
         WebElement currency = driver.findElement(By.id("exchange-visa-trans"));
 
@@ -55,19 +64,23 @@ public class IngTest {
 
         System.out.println(currencyDropDown.getFirstSelectedOption().getText());
 
-        WebElement expectedResult = driver.findElement(By.xpath("//span[@class='exchange-visa-total']"));
+        // Find the TOTAL
 
-//        By expectedResult = By.xpath("//span[@class='exchange-visa-total']");
-//
-//        driver.findElement(expectedResult).getText();
 
-        expectedResult.getText();
+        By expectedResultLocator = By.xpath("//span[@class='exchange-visa-total']");
 
-        double expectedResultParsing = Double.parseDouble(expectedResult.getText());
+        WebElement expectedResultElement = driver.findElement(expectedResultLocator);
 
-//        System.out.println(driver.findElement(expectedResult).getText());
+        String expectedResultText = expectedResultElement.getText();
 
-        // parsing value
+        double expectedResultParsing = Double.parseDouble(expectedResultText);
+
+        System.out.println(expectedResultElement.getText());
+
+
+
+
+
 
 
 
@@ -92,6 +105,8 @@ public class IngTest {
         System.out.println(finalResult);
 
         // rounding result
+
+
 
         Assert.assertEquals(finalResult,expectedResultParsing);
 
