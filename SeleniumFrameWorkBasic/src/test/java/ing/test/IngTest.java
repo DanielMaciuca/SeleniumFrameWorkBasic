@@ -25,7 +25,7 @@ public class IngTest {
         driver.get("https://ing.ro/persoane-fizice/curs-valutar");
         driver.manage().window().maximize();
 
-        // Find the first drop donw
+        // Operation DropDown
 
         By actionLocator = By.id("exchange-type");
 
@@ -35,7 +35,7 @@ public class IngTest {
 
         firstDropdown.selectByValue("1");
 
-        // Find the ammount
+        // Ammount DropDown
 
         WebElement amount = driver.findElement(By.xpath("//input[@type='number']"));
 
@@ -45,16 +45,9 @@ public class IngTest {
 
         Thread.sleep(3000);
 
-//        System.out.println(amount.getText());
-
         System.out.println(amount.getAttribute("value"));
 
-
-//        amount.getAttribute("amount");
-//        WebElement label = driver.findElement(By.xpath("//label[contains(text(), 'Vreau')]"));
-//        System.out.println(label.getText());
-
-        // Find the Currency drop down
+        // Currency DropDown
 
         WebElement currency = driver.findElement(By.id("exchange-visa-trans"));
 
@@ -64,8 +57,7 @@ public class IngTest {
 
         System.out.println(currencyDropDown.getFirstSelectedOption().getText());
 
-        // Find the TOTAL
-
+        // Find the TOTAL and parse it
 
         By expectedResultLocator = By.xpath("//span[@class='exchange-visa-total']");
 
@@ -77,13 +69,7 @@ public class IngTest {
 
         System.out.println(expectedResultElement.getText());
 
-
-
-
-
-
-
-
+        // Find the Element in Table and parse it
 
         WebElement tableAmount = driver.findElement(By.xpath("(//table//tr[2]//td[6])[1]"));
 
@@ -91,10 +77,7 @@ public class IngTest {
 
         System.out.println(tableAmount.getText());
 
-
-        // Actual Result
-
-        // validation
+        // Make the calculations and parsing
 
         double parsedAmount = Double.parseDouble(amount.getAttribute("value"));
 
@@ -104,12 +87,12 @@ public class IngTest {
 
         System.out.println(finalResult);
 
-        // rounding result
+        // Validation
 
+        Assert.assertEquals(finalResult, expectedResultParsing);
 
+        // Close the browser
 
-        Assert.assertEquals(finalResult,expectedResultParsing);
-
-//        driver.quit();
+        // driver.quit();
     }
 }
