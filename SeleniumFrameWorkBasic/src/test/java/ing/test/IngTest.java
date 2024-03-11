@@ -31,21 +31,23 @@ public class IngTest {
 
         WebElement actionLocatorElement = driver.findElement(actionLocator);
 
-        Select firstDropdown = new Select(actionLocatorElement);
+        Select firstDropdownElement = new Select(actionLocatorElement);
 
-        firstDropdown.selectByValue("1");
+        firstDropdownElement.selectByValue("1");
 
         // Ammount DropDown
 
-        WebElement amount = driver.findElement(By.xpath("//input[@type='number']"));
+        By amountLocator = By.xpath("//input[@type='number']");
 
-        amount.clear();
+        WebElement amountInputElement = driver.findElement(amountLocator);
 
-        amount.sendKeys("30");
+        amountInputElement.clear();
+
+        amountInputElement.sendKeys("30");
 
         Thread.sleep(3000);
 
-        System.out.println(amount.getAttribute("value"));
+        System.out.println(amountInputElement.getAttribute("value"));
 
         // Currency DropDown
 
@@ -79,7 +81,7 @@ public class IngTest {
 
         // Make the calculations and parsing
 
-        double parsedAmount = Double.parseDouble(amount.getAttribute("value"));
+        double parsedAmount = Double.parseDouble(amountInputElement.getAttribute("value"));
 
         double parseTableAmount = Double.parseDouble(tableAmount.getText());
 
