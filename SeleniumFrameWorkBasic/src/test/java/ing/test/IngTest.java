@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class IngTest {
 
     @Test
-    public static void main(String[] args) throws InterruptedException {
+    public static void myMethod() throws InterruptedException {
 
         // WebDriver initialization
 
@@ -95,6 +95,6 @@ public class IngTest {
 
         Assert.assertEquals(finalResult, expectedResultParsing);
 
-        // driver.quit();
+         driver.quit();
     }
 }
